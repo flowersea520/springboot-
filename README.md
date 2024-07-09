@@ -3,6 +3,29 @@
 
 只需 1 分钟即可完成内容网站的后端！！！大家还可以在此基础上快速开发自己的项目。
 
+git 常见操作流程示例: 
+# 开始工作前同步远程仓库
+git pull origin master
+
+# 进行开发
+# 编辑代码和文件
+
+# 定期提交本地更改
+git add .
+git commit -m "描述您的更改"
+
+# 在推送前再次拉取远程仓库的最新更改，防止冲突
+git pull origin master
+
+# 解决冲突（如果有）
+# 编辑冲突文件，解决冲突，然后添加和提交
+# git add <冲突解决的文件>
+# git commit -m "解决冲突"
+
+# 推送本地更改到远程仓库
+git push origin master
+
+
 [toc]
 
 ## 模板特点
