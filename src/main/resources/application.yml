@@ -7,7 +7,7 @@ spring:
   # 默认 dev 环境
   profiles:
     active: dev
-  # 支持 swagger3
+  # 支持 swagger
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
