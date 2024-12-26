@@ -8,9 +8,10 @@ package com.lxc.springbootinit.constant;
  */
 public interface FileConstant {
 
-    /**
-     * COS 访问地址
-     * todo 需替换配置
-     */
-    String COS_HOST = "https://lxc.icu";
+	/**
+	 * COS 访问地址
+	 * todo 需替换配置
+	 */
+
+	String COS_PREFIX = "https://macro-oss1-001.oss-cn-guangzhou.aliyuncs.com/";
 }

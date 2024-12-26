@@ -90,7 +90,11 @@ public class AliyunOssUtil {
 
 		String bucketName = config.getBucketName();
 
-		try (OSSObject ossObject = ossClient.getObject(bucketName, filePath);
+
+		// 组合完整的文件路径
+		String fileKey =  filePath;
+
+		try (OSSObject ossObject = ossClient.getObject(bucketName, fileKey);
 			 InputStream inputStream = new BufferedInputStream(ossObject.getObjectContent());
 			 OutputStream outputStream = new BufferedOutputStream(response.getOutputStream())) {
 

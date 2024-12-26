@@ -4,6 +4,10 @@
 server:
   port: 8101
 spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
   # 数据库配置
   # todo 需替换配置
   datasource:
